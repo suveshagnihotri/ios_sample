@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SignUpViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJ3-Jm-hwY">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biglogo" translatesAutoresizingMaskIntoConstraints="NO" id="pyX-iS-cvp">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="kYr-Gf-wmj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0n-WF-QHt">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFl-pc-wgq">
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZxL-eU-82H" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="1" green="0.18815579539999999" blue="0.16101527199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Name"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Name"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Name"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kth-LO-GGx" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="1" green="0.18815579539999999" blue="0.16101527199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Date of Birth"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Date of Birth"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Date of Birth"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rwu-Mx-6VH" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Choose a Gender"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="1" green="0.18815579539999999" blue="0.16101527199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="showEthnicityActionSheet:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="xGd-WR-RXS"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ja-A4-ENy" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="1" green="0.18815579539999999" blue="0.16101527199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Select Ethnicity"/>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="showGenderActionSheet:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="hSO-bX-zXC"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E8x-Mz-oTv" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                                                <color key="value" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="errorColor">
+                                                                <color key="value" red="1" green="0.18815579539999999" blue="0.16101527199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTitleColor">
+                                                                <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Email"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="selectedTitle" value="Email"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="title" value="Email"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pKk-o5-2ul" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="rwu-Mx-6VH" firstAttribute="leading" secondItem="Kth-LO-GGx" secondAttribute="leading" id="1qs-J6-if8"/>
+                                                    <constraint firstItem="6Ja-A4-ENy" firstAttribute="trailing" secondItem="rwu-Mx-6VH" secondAttribute="trailing" id="BNI-eu-9p3"/>
+                                                    <constraint firstItem="pKk-o5-2ul" firstAttribute="top" secondItem="E8x-Mz-oTv" secondAttribute="bottom" constant="33" id="HNc-2k-sQ8"/>
+                                                    <constraint firstItem="rwu-Mx-6VH" firstAttribute="trailing" secondItem="Kth-LO-GGx" secondAttribute="trailing" id="Mvs-66-knp"/>
+                                                    <constraint firstItem="6Ja-A4-ENy" firstAttribute="leading" secondItem="rwu-Mx-6VH" secondAttribute="leading" id="Nt1-Pl-nrQ"/>
+                                                    <constraint firstItem="Kth-LO-GGx" firstAttribute="top" secondItem="ZxL-eU-82H" secondAttribute="bottom" constant="33" id="Qat-OP-i3W"/>
+                                                    <constraint firstItem="rwu-Mx-6VH" firstAttribute="top" secondItem="Kth-LO-GGx" secondAttribute="bottom" constant="33" id="RoS-xK-Q4j"/>
+                                                    <constraint firstItem="E8x-Mz-oTv" firstAttribute="trailing" secondItem="6Ja-A4-ENy" secondAttribute="trailing" id="VIZ-qw-isa"/>
+                                                    <constraint firstItem="E8x-Mz-oTv" firstAttribute="top" secondItem="6Ja-A4-ENy" secondAttribute="bottom" constant="33" id="VT6-wI-den"/>
+                                                    <constraint firstItem="6Ja-A4-ENy" firstAttribute="top" secondItem="rwu-Mx-6VH" secondAttribute="bottom" constant="33" id="XZv-jS-D2n"/>
+                                                    <constraint firstAttribute="height" constant="500" id="Y1p-CM-e4s"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZxL-eU-82H" secondAttribute="trailing" constant="30" id="h7z-mS-6qX"/>
+                                                    <constraint firstItem="Kth-LO-GGx" firstAttribute="trailing" secondItem="ZxL-eU-82H" secondAttribute="trailing" id="iuh-W7-qQj"/>
+                                                    <constraint firstItem="Kth-LO-GGx" firstAttribute="leading" secondItem="ZxL-eU-82H" secondAttribute="leading" id="nvn-ex-JyQ"/>
+                                                    <constraint firstItem="pKk-o5-2ul" firstAttribute="trailing" secondItem="E8x-Mz-oTv" secondAttribute="trailing" id="pBf-4n-xiJ"/>
+                                                    <constraint firstItem="pKk-o5-2ul" firstAttribute="leading" secondItem="E8x-Mz-oTv" secondAttribute="leading" id="qJ0-Hz-Eai"/>
+                                                    <constraint firstItem="E8x-Mz-oTv" firstAttribute="leading" secondItem="6Ja-A4-ENy" secondAttribute="leading" id="wwq-7o-eln"/>
+                                                    <constraint firstItem="ZxL-eU-82H" firstAttribute="top" secondItem="PFl-pc-wgq" secondAttribute="top" constant="30" id="yKx-gA-C66"/>
+                                                    <constraint firstItem="ZxL-eU-82H" firstAttribute="leading" secondItem="PFl-pc-wgq" secondAttribute="leading" constant="30" id="zM1-y7-gDM"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PFl-pc-wgq" secondAttribute="bottom" constant="65" id="2bJ-qm-E6Q"/>
+                                            <constraint firstItem="PFl-pc-wgq" firstAttribute="top" secondItem="f0n-WF-QHt" secondAttribute="top" id="IQc-DQ-Rc9"/>
+                                            <constraint firstItem="PFl-pc-wgq" firstAttribute="leading" secondItem="f0n-WF-QHt" secondAttribute="leading" id="Tyd-Re-cfS"/>
+                                            <constraint firstItem="PFl-pc-wgq" firstAttribute="centerX" secondItem="f0n-WF-QHt" secondAttribute="centerX" id="g2J-md-7mM"/>
+                                            <constraint firstAttribute="trailing" secondItem="PFl-pc-wgq" secondAttribute="trailing" constant="1" id="iB7-7o-7M1"/>
+                                        </constraints>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer" translatesAutoresizingMaskIntoConstraints="NO" id="0qQ-Vv-fZu">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="kkE-rm-ZAL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f0n-WF-QHt" secondAttribute="trailing" id="3cj-O9-g7k"/>
+                                    <constraint firstItem="0qQ-Vv-fZu" firstAttribute="trailing" secondItem="pyX-iS-cvp" secondAttribute="trailing" id="RBv-m4-ncc"/>
+                                    <constraint firstAttribute="trailing" secondItem="0qQ-Vv-fZu" secondAttribute="trailing" constant="-10" id="TM8-0c-qB0"/>
+                                    <constraint firstAttribute="bottom" secondItem="0qQ-Vv-fZu" secondAttribute="bottom" constant="-9" id="VUQ-rn-blM"/>
+                                    <constraint firstItem="0qQ-Vv-fZu" firstAttribute="leading" secondItem="f0n-WF-QHt" secondAttribute="leading" id="cyz-Er-8ps"/>
+                                    <constraint firstItem="pyX-iS-cvp" firstAttribute="top" secondItem="zJ3-Jm-hwY" secondAttribute="top" constant="22" id="eQ8-4U-Cb3"/>
+                                    <constraint firstAttribute="bottom" secondItem="f0n-WF-QHt" secondAttribute="bottom" constant="32" id="hmy-UV-JDp"/>
+                                    <constraint firstItem="f0n-WF-QHt" firstAttribute="top" secondItem="zJ3-Jm-hwY" secondAttribute="top" constant="89" id="lKp-tY-J7T"/>
+                                    <constraint firstItem="pyX-iS-cvp" firstAttribute="leading" secondItem="f0n-WF-QHt" secondAttribute="leading" id="nq0-PD-yxr"/>
+                                    <constraint firstItem="0qQ-Vv-fZu" firstAttribute="leading" secondItem="zJ3-Jm-hwY" secondAttribute="leading" id="r7D-oM-9QY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zJ3-Jm-hwY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3K1-hb-JZb"/>
+                            <constraint firstAttribute="trailing" secondItem="zJ3-Jm-hwY" secondAttribute="trailing" id="40A-t9-qMv"/>
+                            <constraint firstItem="zJ3-Jm-hwY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Xb1-5h-62j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zJ3-Jm-hwY" secondAttribute="bottom" constant="8" symbolic="YES" id="cx5-mf-yJI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="etDatePicker" destination="Kth-LO-GGx" id="GHc-ar-yUA"/>
+                        <outlet property="etEthnicity" destination="rwu-Mx-6VH" id="PMp-BM-wPC"/>
+                        <outlet property="etGender" destination="6Ja-A4-ENy" id="LpL-7H-gHQ"/>
+                        <outlet property="etName" destination="ZxL-eU-82H" id="TNa-S8-4yX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352.80000000000001" y="105.69715142428787"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="biglogo" width="225" height="74"/>
+        <image name="footer" width="240" height="39"/>
+    </resources>
+</document>
